@@ -1,5 +1,5 @@
 {
-  "name": "@axelspringer/graphql-google-pubsub",
+  "name": "@captemulation/graphql-google-pubsub",
   "version": "1.2.1",
   "description": "A graphql-subscriptions PubSub Engine using Google PubSub",
   "main": "dist/index.js",
@@ -27,7 +27,7 @@
     }
   ],
   "scripts": {
-    "prepublishOnly": "npm run test",
+    "prepublishOnly": "npm run testonly",
     "compile": "tsc",
     "pretest": "npm run compile",
     "test": "npm run testonly -- && npm run integration --",
@@ -39,9 +39,9 @@
     "integration": "mocha --reporter spec --full-trace ./dist/test/integration-tests.js"
   },
   "dependencies": {
-    "@google-cloud/pubsub": "^0.28.1",
-    "iterall": "^1.2.2",
-    "graphql-subscriptions": "^1.1.0"
+    "@google-cloud/pubsub": "^0.30.3",
+    "graphql-subscriptions": "^1.1.0",
+    "iterall": "^1.2.2"
   },
   "devDependencies": {
     "@types/chai": "^4.1.4",
